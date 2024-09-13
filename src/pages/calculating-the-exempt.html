@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../img/achievement-award-medal-icon.svg" type="images/svg+xml">
+    <title>نتيجتي - حساب الاعفاء</title>
+    <link rel="stylesheet" href="../css//main.css">
+    <link rel="stylesheet" href="../css/calculating-the-exempt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <section id="top-of-page">
+      <!--Header Section-->
+        <div id="headerDiv"></div>
+      </section>
+    <!--Page Title Section-->
+    <p class="page-title " id="welcomeCalcTheExempition">مرحبا بكم في صفحة حساب الاعفاء</p>
+    <!--How to use Section-->
+    <div class="how-to-use-container">
+      <div class="left-img-div">
+        <img src="../../assets/images/boy-on-school-exam-kid-study-and-think-about-test-or-homework.jpg" class="left-img">
+      </div>
+      <div >
+        <div class="htu-text-div">
+          <div class="qm-img-div">
+            <img src="../../assets/images/question-mark.png" class="qm-img">
+          </div>
+          <div>
+           <p class="htu-title">كيفية الاستخدام:</p>
+          </div>         
+        </div>
+        <div class="htu-explain-container">
+          <div class="htu-explain-div">
+            <ol class="htu-explain" id="explainCalcExempition">
+              <li>تحديد المواد: اختر المواد التي من ضمن منهجك من خلال الضغط على "اختيار مادة" لاختيار المواد، ان كانت هناك مادة لا تريدها يمكنك حذفها من خلال زر الحذف، وفي حال عدم وجود مواد معينة يمكنك اضافتها من خلال كتابة اسم المادة ثم النقر على زر الاضافة.</li>
+              <li>ادخال الدرجات: بعد اختيار المواد، قم بادخال الدرجات في كل مادة من الحقول الثلاثة</li>
+              <li>
+                الحساب: بعد داخال الدرجات انقر على الزر "احسب" ليتم حساب سعي كل مادة في الحقل الرابع واظهار النتيجة، اذا كانت الدرجة باللون الاخضر فلديك اعفاء فردي بتلك المادة وعندما يكون اللون احمر فلا يوجد اعفاء فردي واعفاء عام وعندما تكون باللون الاصفر فلا يوجد اعفاء فردي مع امكانية تحصيل الاعفاء العام
+              </li>
+              <li>
+                وعند النقر على احسب ستظهر النتيجة، التي ستقول لك ما اذا كنت معفي ام لا بالاضافة الى اللاحصائيات 
+              </li>
+              <li>
+                يمكنك مسح النتيجة من خلال النقر على "مسح النتيجة" ويمكنك حفظهامن خلال الضغط على "حفظ كملف png"
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Tools Section-->
+      <div class="tools-section">
+        <div class="add-button-div">
+          <button class="add-button">
+            <img src="../../assets/images/icons/add-icon.svg" class="add-icon">
+          </button>
+        </div>
+        <div class="tools-container">
+          <div>
+            <a class="choose-subject-paragraph choose-link" id="chooseSubjectLink">اختيار مادة</a>
+          </div>
+          <div>
+            <input type="text" placeholder="0" class="text-enter-grade js-input-gahy">
+            <input type="text" placeholder="0" class="text-enter-grade js-input-hyeg">
+            <input type="text" placeholder="0" class="text-enter-grade js-input-gbhy" title="درجة الفصل الأول">
+          </div>
+          <div class="add-text">
+            <input type="text" placeholder="أســــم الــمــــــادة" class="text-box-subject js-add-sub-input input-subject-name" id="textBoxSubject">
+          </div>
+          <div>
+            <p class="add-subject-paragraph" >اضـــــافـة مـــــــــــادة</p>
+          </div>
+        </div>
+      </div>
+    <!--Subjects Grades Information Section-->
+      <div class="information-container">
+       
+        <div class="grades-information">
+          <div class="grades-information-container" id="columnsInformations">
+              <div class="grades-information-title">
+                <div><p class="paragraph-title-4 grades-titles">سعي المادة</p></div>
+                <div><p class="paragraph-title gahy-title grades-titles">درجة الفصل الثاني</p></div>
+                <div><p class="paragraph-title hyeg-title grades-titles">درجة امتحان نصف السنة</p></div>
+                <div><p class="paragraph-title gbhy-title grades-titles">درجة الفصل الاول</p></div>
+                 <div>
+                   <p class="main-subject-name-paragraph">اســـــــم المــــــادة</p>
+                 </div>
+               </div>           
+          </div>
+          <div class="js-div"></div>
+          <div class="grades-information-container">
+            <div class="grades-information-title-sum">
+             <div><p class="sum-result" id="sumD">0</p></div>
+             <div><p class="sum-result" id="sumC">0</p></div>
+             <div><p class="sum-result" id="sumB">0</p></div>
+             <div><p class="sum-result" id="sumA">0</p></div>
+              <div>
+                <p class="sum-text">الـمـجـمـوع</p>
+              </div>
+            </div>
+          </div>
+          <div class="grades-information-container">
+            <div class="grades-information-title-average">
+             <div><p class="average-result" id="averageD">0</p></div>
+             <div><p class="average-result" id="averageC">0</p></div>
+             <div><p class="average-result" id="averageB">0</p></div>
+             <div><p class="average-result" id="averageA">0</p></div>
+              <div>
+                <p class="average-text">الـــمـعدل</p>
+              </div>
+            </div>
+          </div>
+          <div class="grades-information-container">
+            <div class="grades-information-buttons">
+              <button class="calculating-button" id="calculatingButton">احــســب</button>
+              <button class="reset-button " id="resetButton">مسح النتيجة</button>
+              <button class="delete-all-button" id="deleteAllSubjects">حذف المواد</button>
+            </div>
+          </div> 
+        </div>
+        <div class="result-container" id="resultDiv">
+          <p class="result-text " id="resultText">النتيجة!</p>
+           <div class="adding-grades-img-div">
+             <img src="../../assets/images/adding-grades-in-computer.jpg" class="adding-grades-to-computer-icon">
+           </div>
+           <div>
+             <p class="no-grades-text" id="noGradesText1">لم يتم ادخال اي درجات </p>
+             <p class="no-grades-text" id="noGradesText2">يرجى ادخال جميع الدرجات المطلوبة لرؤية النتيجة</p>
+           </div>
+         </div>
+      </div>
+      <section id="viewSection">
+        <div id="saveResultDiv"></div>
+      </section>
+      <div class="save-button-div" id="saveResultButtonDiv"></div>
+      <!--Message Us Section-->
+      <div class="customer-service-grid">
+        <div class="img-div">
+          <img src="../../assets/images/customer-service-image.png" class="customer-service-img">
+        </div>
+        <div class="cs-paragraph">
+          <p class="customer-service-part1">هل تواجه اي مشكلة؟</p>
+          <p class="customer-service-part2">لا تتردد لمراسلتنا عند الحاجة، اخبرنا بكل ما تريد قوله!</p>
+        </div>
+      </div>
+      <div class="cs-button-div"><button class="cs-button" id="messageUsButton">صفحة المراسلة</button></div>
+       <!--Footer Section-->
+       <div id="footerContainer"></div>      
+      <script src="../js/header.js"></script>
+      <script src="../js/calculating-the-exempt.js"></script>
+      <script src="../js/footer.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>      
+  </body>
+</html>

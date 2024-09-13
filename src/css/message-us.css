@@ -1,0 +1,241 @@
+/*- - - - - - - - - - - - - Title Section  - - - - - - - - - - - - - -*/
+
+.message-us-paragraph {
+display:flex;
+align-items:center;
+justify-content: center;
+padding:60px 0;
+font-size:36px;
+}
+.mu-title-grid {
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  direction:rtl;
+  width:80%;
+  margin:auto;
+}
+.mu-title-grid img {
+  width:100%;
+}
+/*
+.title-grid div {
+  display:flex;
+  align-items:center;
+}*/
+.texts-div {
+  margin-top:auto;
+  margin-bottom:auto;
+}
+.text {
+  display: inline;
+  font-size:30px;
+}
+.mu-title-grid p {
+  font-size: 30px;
+}
+.mu-title-grid a:link {
+  color:rgb(44, 202, 255);
+  text-decoration:underline;
+}
+.mu-title-grid a:hover {
+  color:rgb(0, 151, 201);
+  text-decoration:none;
+}
+.mu-title-grid a:visited {
+  color:rgb(44, 202, 255);
+}
+.email-us-section div {
+  display:flex;
+  flex-direction:column;
+}
+.email-us-section {
+  width:70%;
+  margin: 100px auto;
+}/*
+.send-contant div {
+  
+}*/
+.send-title {
+  font-size:30px;
+  margin:30px auto;
+  color:rgb(44, 202, 255);
+}
+.content-paragraph {
+  font-size: 20px;
+  margin-top:10px;
+}
+
+.send-content-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  row-gap:30px;
+}
+.send-content-grid div {
+  display:grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.last-content-paragraph {
+  font-size: 20px;
+  margin-top:10px;
+}
+input {
+  height:44px;
+  border-radius:4px;
+  border: 2px solid black;
+  font-size:24px;
+  padding:12px;
+  font-family:Lalezar;
+}
+textarea {
+  border: 2px solid black;
+  border-radius:4px;
+  height:250px;
+  font-family:Lalezar;
+  font-size:24px;
+  padding:12px;
+}
+.school-img {
+ width:100%;
+}
+.under-sending {
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  width:90%;
+  direction:rtl;
+  margin-top:60px;
+  margin-bottom:60px;
+}
+.paragraph-div {
+  display:flex;
+  align-items:center;
+  margin-right:40px;
+  margin-left:40px;
+  font-size: 30px;
+}
+.error {
+  border: 2px solid red;
+}
+.send-button {
+  background-color:rgb(44, 202, 255);
+  border:none;
+  width: 160px;
+  height:38px;
+  border-radius:6px;
+  font-family:Lalezar;
+  font-size:22px;
+  color:white;
+  cursor:pointer;
+  transition: color 0.1s, background-color  0.1s, height  0.1s, border-radius  0.1s, font-size  0.1s;
+ 
+}
+.send-button:hover {
+  background-color:gold;
+  color:rgb(44, 202, 255);
+  height:48px;
+  border-radius:25px;
+  font-size:26px;
+}
+
+ /* - - - - - - - - -  - Media Queries :: Responsive Design Section - - - - - - - - - - - - */
+
+@media(max-width:1680px){
+  
+}
+@media(max-width:1500px){
+ 
+}
+@media(max-width:1307px){
+ 
+}
+@media(max-width:1120px){
+ .text {
+  font-size:26px;
+ }
+ .mu-title-grid p {
+  font-size: 26px;
+}
+.school-img-text {
+  font-size: 26px;
+}
+}
+@media(max-width:935px){
+  .text {
+    font-size:22px;
+   }
+   .mu-title-grid p {
+    font-size: 22px;
+  }
+  .school-img-text {
+    font-size: 26px;
+  }
+}
+@media(max-width:750px){
+ .message-us-page-title {
+  font-size:30px;
+ }
+ .mu-title-grid {
+  margin-right:20px;
+  margin-left:26px;
+  width:90%;
+ }
+ .send-title {
+  font-size: 20px;
+ }
+ .send-content-grid div {
+  display:grid;
+  grid-template-columns: 2fr 8fr;
+}
+.email-us-section {
+  width:90%;
+}
+.school-img-text {
+  font-size: 22px;
+}
+}
+@media(max-width:630px){
+ 
+}
+@media(max-width:550px){
+  .text {
+    font-size:20px;
+   }
+   .mu-title-grid p {
+    font-size: 20px;
+  }
+  .school-img-text {
+    font-size: 18px;
+  }
+}
+@media(max-width:510px){
+  input {
+    height:34px;
+    font-size:18px;
+    padding:8px;
+    font-family:Lalezar;
+  }
+  textarea {
+    height:200px;
+    font-family:Lalezar;
+    font-size:18px;
+    padding:8px;
+  }
+}
+@media(max-width:380px){
+  .message-us-page-title {
+    font-size:24px;
+   }
+   .text {
+    font-size:16px;
+   }
+   .mu-title-grid p {
+    font-size: 16px;
+  }
+ 
+  .content-paragraph {
+    font-size:18px;
+  }
+  .paragraph-div {
+    margin:6px;
+  }
+}
